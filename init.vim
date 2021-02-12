@@ -21,6 +21,12 @@ else
 
   " Plugin Configuration
   source $HOME/.config/nvim/keys/which-key.vim
+  source $HOME/.config/nvim/plug-config/vim-commentary.vim
+  source $HOME/.config/nvim/plug-config/rnvimr.vim
+  source $HOME/.config/nvim/plug-config/better-whitespace.vim
+  source $HOME/.config/nvim/plug-config/fzf.vim
+  source $HOME/.config/nvim/plug-config/codi.vim
+
   source $HOME/.config/nvim/plug-config/coc/coc.vim
   source $HOME/.config/nvim/plug-config/start-screen.vim
 
