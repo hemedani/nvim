@@ -1,0 +1,15 @@
+dein
+tags*
+.netrwhist
+.DS_Store
+*/**/.DS_Store
+pythonpath.vim
+nodepath.vim
+autoload/plugged/*
+vimspector-config/gadgets/*
+paths.vim
+session
+wiki/
+pack/
+utils/java/*
+
