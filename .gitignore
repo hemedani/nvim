@@ -1,8 +1,6 @@
 dein
 tags*
 .netrwhist
-.DS_Store
-*/**/.DS_Store
 pythonpath.vim
 nodepath.vim
 autoload/plugged/*
@@ -13,3 +11,4 @@ wiki/
 pack/
 utils/java/*
 
+.DS_Store
