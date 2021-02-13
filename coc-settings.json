@@ -1,0 +1,124 @@
+
+{
+  // suggestions
+  // "suggest.echodocSupport": true,
+  // TODO add more labels and give them cool glyphs
+  "suggest.completionItemKindLabels": {
+    "text": "t",
+    "method": "m",
+    "function": "",
+    "constructor": "",
+    "field": "f",
+    "variable": "",
+    "class": "",
+    "interface": "ﰮ",
+    "module": "",
+    "property": "",
+    "unit": "",
+    "value": "",
+    "enum": "了",
+    "keyword": "",
+    "snippet": "﬌",
+    "color": "",
+    "file": "",
+    "reference": "ref",
+    "folder": "'",
+    "enumMember": "",
+    "constant": "'",
+    "struct": "",
+    "event": "event",
+    "operator": "op",
+    "typeParameter": "tp"
+  },
+  "snippets.priority": 1,
+  //"yank.priority": 1,
+  "suggest.languageSourcePriority": 99,
+  "coc.source.file.priority": 2,
+  "coc.source.around.priority": 3,
+  "coc.source.buffer.priority": 4,
+
+  // diagnostics
+  "diagnostic.errorSign": " ",
+  "diagnostic.warningSign": " ",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": " ",
+  // "diagnostic.displayByAle": true,
+  // "diagnostic.virtualText": true, // this won't work with codelens when error on same line
+
+  // codelens
+  "codeLens.enable": true,
+
+  // list
+  "list.indicator": ">",
+  "list.selectedSignText": " ",
+
+  // autoformat
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "graphql",
+    "html",
+    "yaml",
+    "json"
+  ],
+  "coc.preferences.hoverTarget": "float",
+
+  // snippets
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
+  //"snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+
+  // emmet
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
+
+  // CSS (disable since I'm also using stylelintplus)
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "wxss.validate": false,
+
+  // explorer
+  "explorer.width": 30,
+  "explorer.file.root.template": "[icon] [git] [hidden & 1][root]",
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.icon.enableVimDevicons": false,
+  "explorer.file.showHiddenFiles": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
+
+  /* "languageserver": { */
+  /*   "lua": { */
+  /*     "command": "/home/chris/.luambenvs/neovim4/bin/lua-lsp", */
+  /*     "filetypes": ["lua"], */
+  /*     "trace.server": "verbose" */
+  /*   } */
+  /* }, */
+
+  "bookmark.sign": "",
+
+  //coc-emoji
+  "coc.source.emoji.filetypes": ["markdown"]
+
+  // lua
+  //"lua.useSumnekoLs": true,
+  //"lua.commandPath": "/home/chris/.luambenvs/neovim3/bin/lua-lsp"
+  //"lua.enable": true,
+  //"Lua.completion.enable": true,
+  //"Lua.runtime.version": "Lua 5.1",
+  //"Lua.runtime.path": ["?.lua", "?/init.lua", "?/?.lua"],
+  //"lua.version": "5.1"
+  //"lua.commandPath": "/home/chris/.vscode-insiders/extensions/sumneko.lua-1.0.5/server/bin/Linux/lua-language-server"
+
+  // TODO b:coc_suggest_disable=1 GOYO
+  // TODO add to paths.vim g:coc_node_path
+}
+

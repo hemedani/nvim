@@ -126,42 +126,23 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 
 " Explorer
 let g:coc_explorer_global_presets = {
-\   '.vim': {
-\     'root-uri': '~/.vim',
-\   },
-\   'tab': {
-\     'position': 'tab',
-\     'quit-on-open': v:true,
-\   },
 \   'floating': {
-\     'position': 'floating',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\   'floatingTop': {
-\     'position': 'floating',
-\     'floating-position': 'center-top',
-\     'open-action-strategy': 'sourceWindow',
+\      'position': 'floating',
 \   },
 \   'floatingLeftside': {
-\     'position': 'floating',
-\     'floating-position': 'left-center',
-\     'floating-width': 50,
-\     'open-action-strategy': 'sourceWindow',
+\      'position': 'floating',
+\      'floating-position': 'left-center',
+\      'floating-width': 30,
 \   },
 \   'floatingRightside': {
-\     'position': 'floating',
-\     'floating-position': 'right-center',
-\     'floating-width': 50,
-\     'open-action-strategy': 'sourceWindow',
+\      'position': 'floating',
+\      'floating-position': 'right-center',
+\      'floating-width': 30,
 \   },
 \   'simplify': {
-\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-\   },
-\   'buffer': {
-\     'sources': [{'name': 'buffer', 'expand': v:true}]
-\   },
+\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\   }
 \ }
-
 "nmap <silent> <space>e :CocCommand explorer<CR>
 " nnoremap <silent> <leader>e :CocCommand explorer<CR>
 " nmap <space>f :CocCommand explorer --preset floatingRightside<CR>
@@ -182,3 +163,10 @@ let g:coc_snippet_prev = '<c-k>'
 
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
+
+augroup MyCocExplorer
+  autocmd!
+  autocmd VimEnter * sil! au! FileExplorer *
+  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | silent! bd | exe 'CocCommand explorer ' . d | endif
+augroup END
+
