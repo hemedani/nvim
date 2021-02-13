@@ -82,6 +82,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/emmet-vim'
     " Interactive code
     Plug 'metakirby5/codi.vim'
+    " Status Line
+    Plug 'glepnir/galaxyline.nvim'
+    Plug 'kevinhwang91/rnvimr'
+
     " Better tabline
     Plug 'romgrk/barbar.nvim'
     " undo time travel
