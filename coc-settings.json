@@ -106,7 +106,7 @@
   "bookmark.sign": "",
 
   //coc-emoji
-  "coc.source.emoji.filetypes": ["markdown"]
+  "coc.source.emoji.filetypes": ["markdown", "gitcommit", "javascript", "typescript", "javascriptreact", "typescriptreact"]
 
   // lua
   //"lua.useSumnekoLs": true,
