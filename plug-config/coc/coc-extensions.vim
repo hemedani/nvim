@@ -12,6 +12,7 @@ let g:coc_global_extensions = [
   \ 'coc-css',
   \ 'coc-cssmodules',
   \ 'coc-stylelintplus',
+  \ 'coc-styled-components',
   \ 'coc-emoji',
   \ 'coc-yaml',
   \ 'coc-explorer',

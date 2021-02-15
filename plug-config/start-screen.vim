@@ -39,6 +39,7 @@ let g:startify_bookmarks = [
             \ {'s': '~/work/sitak/Satek'},
             \ {'r': '~/work/karyan'},
             \ {'f': '~/work/funql'},
+            \ {'l': '~/work/lwob'},
             \ {'i': '~/.config/nvim/init.vim' },
             \ {'z': '~/.zshrc' },
             \ ]

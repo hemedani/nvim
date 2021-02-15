@@ -51,6 +51,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Themes
     Plug 'christianchiarulli/nvcode-color-schemes.vim'
 
+    " Styled Components support
+    " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
