@@ -74,7 +74,7 @@ gls.left[2] = {
                           ['!']  = colors.red,
                           t = colors.red}
       vim.api.nvim_command('hi GalaxyViMode guibg='..mode_color[vim.fn.mode()])
-      return '  NVCode '
+      return '  SydAmir '
     end,
     separator = ' ',
     separator_highlight = {colors.yellow,function()
@@ -190,6 +190,8 @@ gls.left[12] = {
   DiagnosticHint = {
     provider = 'DiagnosticHint',
     icon = '   ',
+    separator = ' ',
+    separator_highlight = {colors.magenta,colors.bg},
     highlight = {colors.blue,colors.bg},
   }
 }
@@ -197,9 +199,25 @@ gls.left[13] = {
   DiagnosticInfo = {
     provider = 'DiagnosticInfo',
     icon = '   ',
+    separator = ' | ',
+    separator_highlight = {colors.magenta,colors.bg},
     highlight = {colors.orange,colors.bg},
   }
 }
+
+gls.left[14] = {
+  FileName = {
+    -- provider = "FileName",
+    provider = function()
+      return vim.fn.expand("%:F")
+    end,
+    condition = buffer_not_empty,
+    separator = ' | ',
+    separator_highlight = {colors.magenta,colors.bg},
+    highlight = {colors.grey, colors.bg}
+  }
+}
+
 gls.right[1]= {
   FileFormat = {
     provider = 'FileFormat',
@@ -212,7 +230,7 @@ gls.right[2] = {
   LineInfo = {
     provider = 'LineColumn',
     separator = ' | ',
-    separator_highlight = {colors.darkblue,colors.bg},
+    separator_highlight = {colors.magenta,colors.bg},
     highlight = {colors.grey,colors.bg},
   },
 }
@@ -220,7 +238,7 @@ gls.right[3] = {
   PerCent = {
     provider = 'LinePercent',
     separator = ' |',
-    separator_highlight = {colors.darkblue,colors.bg},
+    separator_highlight = {colors.magenta,colors.bg},
     highlight = {colors.grey,colors.bg},
   }
 }
