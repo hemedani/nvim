@@ -53,8 +53,16 @@ let g:which_key_map['u'] = [ ':UndotreeToggle'                                 ,
 let g:which_key_map['v'] = [ '<C-W>v'                                          , 'split right']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'               , 'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                            , 'zen' ]
+let g:which_key_map['c'] = [ ':VCoolor'                                        , 'Color Picker' ]
 
 " Group mappings
+let g:which_key_map.C = {
+      \ 'name' : '+Color Pickers' ,
+      \ 'c' : [':VCoolor'        , 'hex color insertion'],
+      \ 'r' : [':VCoolIns r'        , 'rgb color insertion'],
+      \ 'a' : [':VCoolIns ra'        , 'rgba color insertion'],
+      \ 'h' : [':VCoolIns h'        , 'hsl color insertion'],
+      \ }
 
 " a is for actions
 let g:which_key_map.a = {
