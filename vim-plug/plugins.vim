@@ -98,7 +98,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto change html tags
     Plug 'AndrewRadev/tagalong.vim'
     " live server
-    Plug 'turbio/bracey.vim'
+    Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
     " Smooth scroll
     Plug 'psliwka/vim-smoothie'
     " " async tasks
