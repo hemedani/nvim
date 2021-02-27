@@ -37,6 +37,10 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
 
+" Bidi support
+" set encoding=utf-8
+" set arabicshape
+
 " New stuff
 " set notimeout nottimeout
 " set scrolloff=1
