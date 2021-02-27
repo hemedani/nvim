@@ -120,6 +120,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'szw/vim-maximizer'
     " Neovim in Browser
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
+
+    " Color Date and File picker
+    Plug 'KabbAmine/vCoolor.vim'
   endif
 
 call plug#end()
