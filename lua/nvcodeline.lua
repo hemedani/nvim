@@ -15,6 +15,7 @@ local colors = {
   purple = '#5d4d7a',
   magenta = '#d16d9e',
   grey = '#c0c0c0',
+  darkgrey = '#A0A2A6',
   blue = '#569CD6',
   red = '#D16969'
 }
@@ -214,7 +215,7 @@ gls.left[14] = {
     condition = buffer_not_empty,
     separator = ' | ',
     separator_highlight = {colors.magenta,colors.bg},
-    highlight = {colors.grey, colors.bg}
+    highlight = {colors.darkgrey, colors.bg}
   }
 }
 
