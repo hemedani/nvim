@@ -123,6 +123,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Color Date and File picker
     Plug 'KabbAmine/vCoolor.vim'
+
+    " Http client wrapper
+    Plug 'nicwest/vim-http'
   endif
 
 call plug#end()
