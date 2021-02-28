@@ -56,6 +56,19 @@ let g:which_key_map['z'] = [ 'Goyo'                                            ,
 let g:which_key_map['c'] = [ ':VCoolor'                                        , 'Color Picker' ]
 
 " Group mappings
+
+" r for http rest client
+let g:which_key_map.r = {
+      \ 'name' : '+Http Request' ,
+      \ 'h' : [':Http'        , 'execute the request and display the response in a new buffer'],
+      \ 'r' : [':Http!'        , 'execute the request as above and follow any redirects'],
+      \ 's' : [':HttpShowCurl'        , 'displays the curl request that the plugin executes under the hood'],
+      \ 't' : [':HttpShowRequest'        , 'displays the internal object representing the request'],
+      \ 'c' : [':HttpClean'        , 'add Host and Content-Length headers'],
+      \ 'a' : [':HttpAuth'        , 'prompt for authorization credentials'],
+      \ }
+
+" C for color picker
 let g:which_key_map.C = {
       \ 'name' : '+Color Pickers' ,
       \ 'c' : [':VCoolor'        , 'hex color insertion'],
