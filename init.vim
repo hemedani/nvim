@@ -18,7 +18,9 @@ else
 
     " Themes
   source $HOME/.config/nvim/themes/syntax.vim
+  " source $HOME/.config/nvim/themes/edge.vim
   source $HOME/.config/nvim/themes/nvcode.vim
+  " source $HOME/.config/nvim/themes/oceanic.vim
 
   " Plugin Configuration
   source $HOME/.config/nvim/keys/which-key.vim

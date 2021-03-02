@@ -48,14 +48,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Closetags
     Plug 'alvan/vim-closetag'
+
     " Themes
     Plug 'christianchiarulli/nvcode-color-schemes.vim'
+    " Plug 'mhartington/oceanic-next'
+    " Plug 'sainnhe/edge'
+
+    " improve registers
+    Plug 'junegunn/vim-peekaboo'
 
     " Styled Components support
     " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
     " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
