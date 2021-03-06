@@ -8,6 +8,9 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " Neovim LSP config
+    Plug 'neovim/nvim-lspconfig'
+
     " Better Comments
     Plug 'tpope/vim-commentary'
     " Change dates fast
@@ -38,14 +41,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-sleuth'
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
+
     " Treesitter
-    Plug 'nvim-treesitter/nvim-treesitter'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'nvim-treesitter/playground'
+
     " Cool Icons
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons'
+
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
+
     " Closetags
     Plug 'alvan/vim-closetag'
 
@@ -70,7 +77,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/rpc' }
     Plug 'junegunn/fzf.vim'
-    " Git
+
+    " Vim Telescope
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
+
+" Git
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'

@@ -58,6 +58,67 @@ let g:which_key_map['c'] = [ ':VCoolor'                                        ,
 
 " Group mappings
 
+" E for Telescope
+let g:which_key_map.E = {
+      \ 'name' : '+Telescope' ,
+      \ 'f' : {
+            \ 'name' : '+File Pickers' ,
+            \ 'f' : [':Telescope find_files'        , 'Lists Files in current directory.'],
+            \ 'g' : [':Telescope git_files'        , 'Lists Git files in current directory.'],
+            \ 's' : [':Telescope grep_string'        , 'Searches for a string under the cursor in current directory.'],
+            \ 'l' : [':Telescope live_grep'        , 'Searches in current directory files. (respecting .gitignore)'],
+            \ 'e' : [':Telescope file_browser'        , 'Ivy-like file explorer. Creates files by typing in filename and pressing <C-e>. Press <C-e> without prompt for more info'],
+      \  },
+      \ 'v' : {
+            \ 'name' : '+Vim Pickers' ,
+            \ 'b' : [':Telescope buffers'        , 'Lists Open buffers in the current vim instance.'],
+            \ 'o' : [':Telescope oldfiles'        , 'Lists Previously open files.'],
+            \ 'd' : [':Telescope commands'        , 'Lists Available plugin/user commands and run it.'],
+            \ 't' : [':Telescope tags'        , 'Lists Tags in current directory with preview (ctags -R)'],
+            \ 'h' : [':Telescope command_history'        , 'Lists Tags in current directory with preview (ctags -R)'],
+            \ 'n' : [':Telescope help_tags'        , 'find help tags'],
+            \ 'm' : [':Telescope man_pages'        , 'Lists Man entries.'],
+            \ 'r' : [':Telescope marks'        , 'Lists Markers and their value.'],
+            \ 'c' : [':Telescope colorscheme'        , 'Lists Colorscheme and switch to it on enter.'],
+            \ 'q' : [':Telescope quickfix'        , 'Lists items from quickfix.'],
+            \ 'l' : [':Telescope loclist'        , 'Lists items from current windows location list.'],
+            \ 'v' : [':Telescope vim_options'        , 'Lists vim options and on enter edit the options value.'],
+            \ 'g' : [':Telescope registers'        , 'Lists vim registers and edit or paste selection.'],
+            \ 'a' : [':Telescope autocommands'        , 'Lists vim autocommands and go to their declaration.'],
+            \ 's' : [':Telescope spell_suggest'        , 'Lists spelling suggestions for.'],
+            \ 'k' : [':Telescope keymap'        , 'Lists normal-mode mappings.'],
+            \ 'f' : [':Telescope filetypes'        , 'Lists all filetypes.'],
+            \ 'i' : [':Telescope highlights'        , 'Lists all highlights.'],
+            \ 'u' : [':Telescope current_buffer_fuzzy_find'        , 'Searches in current buffer lines.'],
+            \ 'w' : [':Telescope current_buffer_tags'        , 'Lists Tags in current buffer.'],
+      \},
+      \ 'l' : {
+            \ 'name' : '+LSP Pickers' ,
+            \ 'r' : [':Telescope lsp_references'        , 'Searches in LSP references.'],
+            \ 's' : [':Telescope lsp_document_symbols'        , 'Searches in LSP Document Symbols in the current document.'],
+            \ 'w' : [':Telescope lsp_workspace_symbols'        , 'Searches in LSP all workspace symbols.'],
+            \ 'c' : [':Telescope lsp_code_actions'        , 'Lists LSP action to be trigged on enter.'],
+            \ 'a' : [':Telescope lsp_range_code_actions'        , 'Lists LSP range code action to be trigged on enter.'],
+            \ 'd' : [':Telescope lsp_document_diagnostics'        , 'Lists LSP Diagnostics in the current document.'],
+            \ 'e' : [':Telescope lsp_workspace_diagnostics'        , 'Lists LSP Diagnostics in the workspace if supported and otherwise open buffers.'],
+      \},
+      \ 'g' : {
+            \ 'name' : '+Git Pickers' ,
+            \ 'c' : [':Telescope git_commits'        , 'Lists git commits with diff preview and on enter checkout the commit.'],
+            \ 'm' : [':Telescope git_bcommits'        , 'Lists buffers git commits with diff preview and checkouts it out on enter.'],
+            \ 'b' : [':Telescope git_branches'        , 'Lists all branches with log preview, checkout action (), track action () and rebase action().'],
+            \ 's' : [':Telescope git_status'        , 'Lists current changes per file with diff preview and add action. (Multiselection still WIP)'],
+      \},
+      \ 'i' : {
+            \ 'name' : '+Lists Picker' ,
+            \ 'p' : [':Telescope planets'        , 'Use the telescope.'],
+            \ 'b' : [':Telescope builtin'        , 'Lists Built-in pickers and run them on enter.'],
+            \ 'r' : [':Telescope reloader'        , 'Lists lua modules and reload them on enter.'],
+            \ 's' : [':Telescope symbols'        , 'Lists symbols inside a file data/telescope-sources/*.json found in your rtp. More info and symbol sources can be found here'],
+      \},
+      \ 't' : [':Telescope treesitter'        , 'Lists Function names, variables, from Treesitter!'],
+      \ }
+
 " r for http rest client
 let g:which_key_map.r = {
       \ 'name' : '+Http Request' ,
