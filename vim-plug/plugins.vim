@@ -145,6 +145,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Http client wrapper
     Plug 'nicwest/vim-http'
+
+    "Time controlling
+    Plug 'wakatime/vim-wakatime'
   endif
 
 call plug#end()
